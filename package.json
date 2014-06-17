@@ -1,0 +1,23 @@
+{
+  "name": "tus-client",
+  "version": "0.0.1",
+  "description": "NodeJS client for the tus (http://tus.io) protocol.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tus",
+    "upload",
+    "file",
+    "upload",
+    "resumable"
+  ],
+  "author": "Zalari UG (haftungsbeschränkt)",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.36.0",
+    "lodash": "^2.4.1",
+    "q": "^1.0.1"
+  }
+}
