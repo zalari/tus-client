@@ -4,5 +4,5 @@
 
 var client = require('../lib/client.js');
 
-client.configure("http://127.0.0.1:8080/files/");
-client.uploadFile('/Users/chris/Desktop/tmp/1G',"6b7da2b0-f64c-11e3-9349-3b31a9606388");
+client.configure("http://intern.zalari.de:5000/files/");
+client.uploadFile('/Users/chris/Desktop/tmp/200M',"438bd490-f654-11e3-a9d8-cd23b5b3c4c3");
