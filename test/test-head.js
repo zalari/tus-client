@@ -12,7 +12,7 @@ var uploadFilePath = "/Users/chris/Desktop/tmp/1G";
 var reqOptions = {
     hostname:"127.0.0.1",
     method:"HEAD",
-    path:"/files/408b9e70-f608-11e3-a356-ad1df33a4acd",
+    path:"/files/7e293750-f64a-11e3-9349-3b31a9606388",
     port:8080
 };
 
@@ -25,14 +25,3 @@ req = http.request(reqOptions, function(res) {
 
 //req ist fertig; also raus damit...
 req.end();
-
-/*
-var http = require('http');
-var options = {method: 'HEAD', host: '127.0.0.1', port: 8080, path: '/files/408b9e70-f608-11e3-a356-ad1df33a4acd'};
-var req = http.request(options, function(res) {
-        console.log(res.statusCode);
-        console.log(JSON.stringify(res.headers));
-    }
-);
-*/
-//req.end();
