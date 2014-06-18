@@ -9,7 +9,7 @@ var path = require('path'),
 //hart-kodierter Aufruf
 var uploadFilePath = "/Users/chris/Desktop/tmp/1G";
 //var uploadURI = args[3];
-var offsetIndex = 251328168;
+var offsetIndex = 368;
 
 //wir wissen ab welcher Position gesendet werden soll, müssen aber noch in Erfahrung bringen, wieviel noch gesendet wird
 
@@ -26,7 +26,7 @@ var contentLength = finalLength - offsetIndex;
 var reqOptions = {
     hostname:"127.0.0.1",
     method:"PATCH",
-    path:"/files/408b9e70-f608-11e3-a356-ad1df33a4acd",
+    path:"/files/7e293750-f64a-11e3-9349-3b31a9606388",
     port:8080,
     headers:{
         "content-type": "application/offset+octet-stream",
@@ -46,7 +46,8 @@ rs = fs.createReadStream(uploadFilePath,{start:parseInt(offsetIndex),end:finalLe
 
 //req ausführen
 
-req = http.request(reqOptions, function(res) {
+req = http.request(reqOptions);
+req.once('response', function(res) {
  //Response verarbeiten
  console.log('STATUS: ' + res.statusCode);
  console.log('HEADERS: ' + util.inspect(res.headers));
