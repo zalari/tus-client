@@ -24,5 +24,9 @@ console.log("Offset:",offsetIndex,"wird z.Zt. ignoriert...");
 console.log("remoteFilename",remoteFilename);
 
 client.configure(uploadURI);
-client.uploadFile(uploadFilePath,remoteFilename);
+client.uploadFile(uploadFilePath,remoteFilename).then(function(){
+    console.log("Upload succeded...");
+}).fail(function(){
+    console.log("Upload failed...");
+});
 
