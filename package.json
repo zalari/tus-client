@@ -1,6 +1,6 @@
 {
   "name": "tus-client",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "NodeJS client for the tus (http://tus.io) protocol.",
   "main": "lib/client.js",
   "scripts": {
