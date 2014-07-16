@@ -6,6 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:zalari/tus-client.git"
+    },
   "keywords": [
     "tus",
     "upload",
@@ -13,7 +17,7 @@
     "upload",
     "resumable"
   ],
-  "author": "Zalari UG (haftungsbeschränkt)",
+  "author": "Christian Ulbrich, Zalari UG (haftungsbeschränkt)",
   "license": "ISC",
   "dependencies": {
     "request": "^2.36.0",

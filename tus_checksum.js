@@ -1,4 +1,10 @@
 #!/usr/bin/env node
+
+/**
+ * (c) Christian Ulbrich, Zalari UG (haftungsbeschränkt)
+ * 2014
+ */
+
 var util = require('util'),
     path = require('path'),
     fs = require('fs');
