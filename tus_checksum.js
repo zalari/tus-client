@@ -18,8 +18,8 @@ var offsetIndex = parseInt(args[3]);
 var endIndex = parseInt(args[4]) || undefined;
 
 if (endIndex==undefined){
-    //endIndex ist nicht definiert, daher einfach bis zum Ende lesen
-    //dafür den endIndex berechnen
+    //when endIndex is not given, simply checksum the hole file,
+    //i.e. the endIndex becomes the filesize
     var stats = fs.statSync(filepath);
     endIndex = stats.size;
 }
