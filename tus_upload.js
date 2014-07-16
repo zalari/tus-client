@@ -1,6 +1,11 @@
 #!/usr/bin/env node
-var util = require('util'),
-    path = require('path');
+
+/**
+ * (c) Christian Ulbrich, Zalari UG (haftungsbeschränkt)
+ * 2014
+ */
+
+var path = require('path');
 
 var client = require('./lib/client.js');
 

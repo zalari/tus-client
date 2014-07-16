@@ -1,11 +1,15 @@
 {
   "name": "tus-client",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "NodeJS client for the tus (http://tus.io) protocol.",
   "main": "lib/client.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:zalari/tus-client.git"
+    },
   "keywords": [
     "tus",
     "upload",
@@ -13,7 +17,7 @@
     "upload",
     "resumable"
   ],
-  "author": "Zalari UG (haftungsbeschränkt)",
+  "author": "Christian Ulbrich, Zalari UG (haftungsbeschränkt)",
   "license": "ISC",
   "dependencies": {
     "request": "^2.36.0",
